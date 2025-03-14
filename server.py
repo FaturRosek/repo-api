@@ -59,7 +59,7 @@ async def predict(file: UploadFile = File(...)):
     label, confidence = predict_image(img)
 
     # Buat URL untuk mengakses gambar
-    image_url = f"http://localhost:8000/images/{unique_filename}"
+    image_url = f"https://web-production-8422.up.railway.app/images/{unique_filename}"
 
     return {
         "class": label,
